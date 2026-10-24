@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCM Lite Dashboard</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        Saylani <span>HCM Lite</span>
+    </header>
+
+    <div class="container">
+
+        <aside class="sidebar">
+            <button onclick="showPage('dashboard')">Dashboard</button>
+            <button onclick="showPage('employees')">Employees</button>
+            <button onclick="showPage('attendance')">Attendance</button>
+            <button onclick="showPage('leaves')">Leave Requests</button>
+            <button onclick="showPage('payslip')">Payslip</button>
+        </aside>
+
+        <main id="app"></main>
+
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>

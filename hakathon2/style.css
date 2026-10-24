@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f3f5fa;
+    color: #26334d;
+}
+
+header {
+    background: #202d4b;
+    color: white;
+    padding: 22px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+header span {
+    color: #159d8b;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    background: #202d4b;
+    width: 220px;
+    padding: 20px 12px;
+}
+
+button {
+    border: none;
+    background: #159d8b;
+    color: white;
+    padding: 11px 15px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin: 4px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.sidebar button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: transparent;
+    color: white;
+}
+
+main {
+    flex: 1;
+    min-width: 0;
+    padding: 25px;
+}
+
+h1 {
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #718096;
+    margin-bottom: 25px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 22px;
+}
+
+.card,
+.panel {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 3px 12px #0000000a;
+    margin-bottom: 18px;
+}
+
+.card h2 {
+    color: #159d8b;
+    font-size: 32px;
+    margin-top: 12px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 11px;
+    margin: 8px 0 15px;
+    border: 1px solid #d9dfeb;
+    border-radius: 7px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    padding: 12px 8px;
+    border-bottom: 1px solid #e5e9f0;
+    text-align: left;
+}
+
+th {
+    background: #202d4b;
+    color: white;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+@media (max-width: 700px) {
+    .container {
+        display: block;
+    }
+
+    .sidebar {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .sidebar button {
+        width: auto;
+    }
+
+    main {
+        padding: 14px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
